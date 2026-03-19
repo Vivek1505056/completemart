@@ -180,7 +180,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold mb-2 text-gray-900">Email Us</h3>
                     <div className="text-gray-600 text-sm space-y-1">
-                      <p>info@completemart.ca</p>
+                      <p>completemart23@gmail.com</p>
                       <p>Response within 24 hours</p>
                     </div>
                   </div>

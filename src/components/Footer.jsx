@@ -26,7 +26,6 @@ export default function Footer() {
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/services" className="hover:text-primary transition-colors">Our Services</Link></li>
               <li><Link to="/locations" className="hover:text-primary transition-colors">Store Locations</Link></li>
-              <li><Link to="/promotions" className="hover:text-primary transition-colors">Promotions</Link></li>
             </ul>
           </div>
 
@@ -51,7 +50,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>info@completemart.ca</span>
+                <span>completemart23@gmail.com</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />

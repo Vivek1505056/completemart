@@ -15,7 +15,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/locations" element={<Locations />} />
-        <Route path="/promotions" element={<Promotions />} />
+        {/* <Route path="/promotions" element={<Promotions />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </SiteLayout>

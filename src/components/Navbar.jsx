@@ -7,7 +7,6 @@ const navLinks = [
   { path: '/about', label: 'About Us' },
   { path: '/services', label: 'Our Services' },
   { path: '/locations', label: 'Store Locations' },
-  { path: '/promotions', label: 'Promotions' },
   { path: '/contact', label: 'Contact Us' }
 ];
 

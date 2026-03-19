@@ -39,7 +39,7 @@ const featuredServices = [
       'Cargo vans and pickup trucks',
       'Moving trucks in various sizes',
       'Moving equipment and supplies',
-      'Easy online booking and flexible rental periods'
+      'Easy phone booking and flexible rental periods'
     ],
     image: 'https://images.unsplash.com/photo-1758219944627-4d9b32ed7019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxVLUhhdWwlMjBtb3ZpbmclMjB0cnVjayUyMHJlbnRhbHxlbnwxfHx8fDE3NzE2NDE4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080'
   }
