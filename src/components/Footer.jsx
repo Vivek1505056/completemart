@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>4 locations across the GTA</span>
+                <span>3 locations across the GTA</span>
               </li>
             </ul>
           </div>

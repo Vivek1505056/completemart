@@ -20,10 +20,9 @@ const reviews = [
 ];
 
 const locationsList = [
-  { area: 'Downtown Toronto', address: '123 Queen Street West' },
-  { area: 'North York', address: '456 Yonge Street' },
-  { area: 'Scarborough', address: '789 Kennedy Road' },
-  { area: 'Mississauga', address: '321 Hurontario Street' }
+  { area: 'Old Sheppard', address: '5 Old Sheppard Ave UNIT 108' },
+  { area: 'York Mills', address: '1200 York Mills Rd #100' },
+  { area: 'Wilson Heights', address: '537 Wilson Heights Blvd' }
 ];
 
 export default function Home() {
@@ -106,7 +105,7 @@ export default function Home() {
             <div className="reveal-left">
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Locations</h2>
               <p className="text-xl text-gray-600 mb-8">
-                With 4 locations across the Greater Toronto Area, there's always a Complete Mart nearby.
+                With 3 locations across the Greater Toronto Area, there's always a Complete Mart nearby.
                 Each store offers the same quality products and excellent service you can count on.
               </p>
               <div className="space-y-4 mb-8">

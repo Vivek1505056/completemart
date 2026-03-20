@@ -141,7 +141,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6 text-gray-900">Questions About Our Services?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Our friendly team is always happy to help. Visit any of our four locations or contact us directly.
+            Our friendly team is always happy to help. Visit any of our three locations or contact us directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

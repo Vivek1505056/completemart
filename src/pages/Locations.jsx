@@ -1,54 +1,55 @@
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 import { useScrollReveal, useScrollToTop } from '../hooks/useScrollReveal';
+
+// Fix default marker icon issue with bundlers
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
+  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+});
 
 const locations = [
   {
-    name: 'Complete Mart Downtown',
-    address: '123 Queen Street West',
-    city: 'Toronto, ON M5H 2M9',
-    phone: '(416) 555-0101',
+    name: 'Complete Mart - Old Sheppard',
+    address: '5 Old Sheppard Ave UNIT 108',
+    city: 'North York, ON M2J 4K3',
+    phone: '(416) 492-2525',
     hours: [
-      { days: 'Monday - Friday', time: '7:00 AM - 11:00 PM' },
-      { days: 'Saturday', time: '8:00 AM - 11:00 PM' },
-      { days: 'Sunday', time: '9:00 AM - 10:00 PM' }
+      { days: 'Monday - Friday', time: '9:30 AM - 9:00 PM' },
+      { days: 'Saturday', time: '10:00 AM - 8:00 PM' },
+      { days: 'Sunday', time: '10:00 AM - 7:00 PM' }
     ],
-    mapUrl: 'https://maps.google.com/?q=123+Queen+Street+West+Toronto'
+    mapUrl: 'https://maps.google.com/?q=5+Old+Sheppard+Ave+UNIT+108+North+York',
+    coords: [43.7785, -79.3460]
   },
   {
-    name: 'Complete Mart North York',
-    address: '456 Yonge Street',
-    city: 'North York, ON M2N 5S9',
-    phone: '(416) 555-0102',
+    name: 'Complete Mart - York Mills',
+    address: '1200 York Mills Rd #100',
+    city: 'North York, ON M3A 1X8',
+    phone: '(416) 792-1651',
     hours: [
-      { days: 'Monday - Friday', time: '7:00 AM - 11:00 PM' },
-      { days: 'Saturday', time: '8:00 AM - 11:00 PM' },
-      { days: 'Sunday', time: '9:00 AM - 10:00 PM' }
+      { days: 'Monday - Friday', time: '9:00 AM - 9:00 PM' },
+      { days: 'Saturday', time: '10:00 AM - 9:00 PM' },
+      { days: 'Sunday', time: '10:00 AM - 8:00 PM' }
     ],
-    mapUrl: 'https://maps.google.com/?q=456+Yonge+Street+North+York'
+    mapUrl: 'https://maps.google.com/?q=1200+York+Mills+Rd+100+North+York',
+    coords: [43.7515, -79.3545]
   },
   {
-    name: 'Complete Mart Scarborough',
-    address: '789 Kennedy Road',
-    city: 'Scarborough, ON M1P 2L4',
-    phone: '(416) 555-0103',
+    name: 'Complete Mart - Wilson Heights',
+    address: '537 Wilson Heights Blvd',
+    city: 'North York, ON M3H 2V7',
+    phone: '(416) 636-3522',
     hours: [
-      { days: 'Monday - Friday', time: '7:00 AM - 11:00 PM' },
-      { days: 'Saturday', time: '8:00 AM - 11:00 PM' },
-      { days: 'Sunday', time: '9:00 AM - 10:00 PM' }
+      { days: 'Monday - Saturday', time: '9:00 AM - 8:30 PM' },
+      { days: 'Sunday', time: '10:00 AM - 7:00 PM' }
     ],
-    mapUrl: 'https://maps.google.com/?q=789+Kennedy+Road+Scarborough'
-  },
-  {
-    name: 'Complete Mart Mississauga',
-    address: '321 Hurontario Street',
-    city: 'Mississauga, ON L5B 1N2',
-    phone: '(905) 555-0104',
-    hours: [
-      { days: 'Monday - Friday', time: '7:00 AM - 11:00 PM' },
-      { days: 'Saturday', time: '8:00 AM - 11:00 PM' },
-      { days: 'Sunday', time: '9:00 AM - 10:00 PM' }
-    ],
-    mapUrl: 'https://maps.google.com/?q=321+Hurontario+Street+Mississauga'
+    mapUrl: 'https://maps.google.com/?q=537+Wilson+Heights+Blvd+North+York',
+    coords: [43.7390, -79.4480]
   }
 ];
 
@@ -71,7 +72,7 @@ export default function Locations() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Store Locations</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed">
-            Four convenient locations across the Greater Toronto Area &ndash; Downtown Toronto, North York, Scarborough, and Mississauga
+            Three convenient locations across the Greater Toronto Area
           </p>
         </div>
       </section>
@@ -141,12 +142,28 @@ export default function Locations() {
               Conveniently located throughout the Greater Toronto Area
             </p>
           </div>
-          <div className="bg-gray-200 rounded-2xl h-[500px] flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600 text-lg">Interactive map would be embedded here</p>
-              <p className="text-gray-500 text-sm mt-2">Google Maps integration</p>
-            </div>
+          <div className="rounded-2xl overflow-hidden h-[500px] shadow-lg">
+            <MapContainer
+              center={[43.7530, -79.3830]}
+              zoom={12}
+              scrollWheelZoom={false}
+              style={{ height: '100%', width: '100%' }}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
+                url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+              />
+              {locations.map((location, index) => (
+                <Marker key={index} position={location.coords}>
+                  <Popup>
+                    <strong>{location.name}</strong><br />
+                    {location.address}<br />
+                    {location.city}<br />
+                    {location.phone}
+                  </Popup>
+                </Marker>
+              ))}
+            </MapContainer>
           </div>
         </div>
       </section>

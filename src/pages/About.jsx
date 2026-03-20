@@ -20,7 +20,7 @@ const values = [
   {
     icon: MapPin,
     title: 'Local Presence',
-    description: "With 4 locations across the GTA, we're always nearby when you need us, open 7 days a week."
+    description: "With 3 locations across the GTA, we're always nearby when you need us, open 7 days a week."
   }
 ];
 
@@ -68,7 +68,7 @@ export default function About() {
                   customer care.
                 </p>
                 <p>
-                  What started as a single convenience store has grown into four thriving locations across the
+                  What started as a single convenience store has grown into three thriving locations across the
                   Greater Toronto Area. Our expansion has been driven by one thing &ndash; the trust and loyalty of
                   customers like you.
                 </p>
