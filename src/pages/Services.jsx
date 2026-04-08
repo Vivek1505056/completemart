@@ -7,13 +7,23 @@ const featuredServices = [
     icon: Package,
     title: 'Parcel Shipping Services',
     description: 'Send and receive packages with ease through our partnership with major carriers.',
+    logos: [
+      { name: 'FedEx', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/200px-FedEx_Corporation_-_2016_Logo.svg.png' },
+      { name: 'UPS', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/United_Parcel_Service_logo_2014.svg/200px-United_Parcel_Service_logo_2014.svg.png' },
+      { name: 'Purolator', url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Purolator_Inc._logo.svg/200px-Purolator_Inc._logo.svg.png' },
+      { name: 'DHL', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/200px-DHL_Logo.svg.png' },
+      { name: 'Amazon', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png' }
+    ],
     features: [
       'FedEx authorized shipping',
       'UPS drop-off and pick-up',
       'Purolator service point',
+      'DHL service point',
+      'Amazon Hub Counter',
+      'Shein & Temu returns',
+      'Packaging supplies available',
       'PUDO parcel lockers',
-      'Package tracking assistance',
-      'Packing supplies available'
+      'Package tracking assistance'
     ],
     image: 'https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWNrYWdlJTIwZGVsaXZlcnklMjBzaGlwcGluZyUyMGJveGVzfGVufDF8fHx8MTc3MTY0MDM2Mnww&ixlib=rb-4.1.0&q=80&w=1080'
   },
@@ -24,9 +34,7 @@ const featuredServices = [
     features: [
       'Passport photos (government approved)',
       'ID photos for licenses',
-      'Photo printing (various sizes)',
-      'Same-day service available',
-      'Matte or glossy finish',
+      '10 minute photo service',
       'Professional quality guaranteed'
     ],
     image: 'https://images.unsplash.com/photo-1639034741369-1e0c771adaeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXNzcG9ydCUyMHBob3RvJTIwcHJpbnRpbmclMjBzZXJ2aWNlfGVufDF8fHx8MTc3MTY0MTg1NXww&ixlib=rb-4.1.0&q=80&w=1080'
@@ -48,10 +56,14 @@ const featuredServices = [
 const additionalServices = [
   { icon: Key, title: 'Key Cutting Services', description: 'Fast and accurate key duplication for house, car, office, and padlock keys while you wait.' },
   { icon: Ticket, title: 'OLG Lottery', description: 'Authorized retailer for Lotto Max, 6/49, Daily Grand, scratch tickets, and PROLINE sports betting.' },
-  { icon: Beer, title: 'Beer & Beverages', description: 'Wide selection of domestic, imported, and craft beers, plus energy drinks and soft drinks always cold.' },
-  { icon: ShoppingCart, title: 'Grocery & Snacks', description: 'Fresh produce, dairy, bread, canned goods, snacks, and household essentials for everyday needs.' },
-  { icon: DollarSign, title: 'Money Transfer Services', description: 'Fast and secure international and domestic money transfers, bill payments, and money orders.' },
-  { icon: Banknote, title: 'ATM Services', description: '24/7 ATM access for cash withdrawals and balance inquiries with major networks accepted.' }
+  { icon: Beer, title: 'Beer & Beverages', description: 'Wide selection of domestic, imported, and craft beers, wine, plus energy drinks and soft drinks always cold.' },
+  { icon: ShoppingCart, title: 'Grocery & Snacks', description: 'Dairy, bread, canned goods, snacks, and household essentials for everyday needs.' },
+  { icon: DollarSign, title: 'Money Transfer Services', description: 'Fast and secure international and domestic money transfers, bill payments, and money orders.', logos: [
+    { name: 'Western Union', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Western_Union_Logo_2019.svg/200px-Western_Union_Logo_2019.svg.png' },
+    { name: 'MoneyGram', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/MoneyGram_logo.svg/200px-MoneyGram_logo.svg.png' },
+    { name: 'Ria', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ria_Money_Transfer_logo.svg/200px-Ria_Money_Transfer_logo.svg.png' }
+  ]},
+  { icon: Banknote, title: 'ATM Services', description: 'ATM access for cash withdrawals and balance inquiries with major networks accepted.' }
 ];
 
 export default function Services() {
@@ -101,6 +113,13 @@ export default function Services() {
                       </div>
                     ))}
                   </div>
+                  {service.logos && (
+                    <div className="flex flex-wrap items-center gap-6 mt-6 pt-6 border-t border-gray-100">
+                      {service.logos.map((logo, idx) => (
+                        <img key={idx} src={logo.url} alt={logo.name} className="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div className={`relative h-[400px] rounded-2xl overflow-hidden shadow-xl ${index % 2 === 1 ? 'md:order-1' : ''}`}>
                   <img
@@ -130,6 +149,13 @@ export default function Services() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
+                {service.logos && (
+                  <div className="flex flex-wrap items-center gap-4 mt-4 pt-4 border-t border-gray-100">
+                    {service.logos.map((logo, idx) => (
+                      <img key={idx} src={logo.url} alt={logo.name} className="h-6 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
