@@ -116,7 +116,7 @@ export default function Services() {
                   {service.logos && (
                     <div className="flex flex-wrap items-center gap-6 mt-6 pt-6 border-t border-gray-100">
                       {service.logos.map((logo, idx) => (
-                        <img key={idx} src={logo.url} alt={logo.name} className="h-8 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img key={idx} src={logo.url} alt={logo.name} className="h-8 object-contain transition-all duration-300" />
                       ))}
                     </div>
                   )}
@@ -158,7 +158,7 @@ export default function Services() {
                 {service.logos && (
                   <div className="flex flex-wrap items-center gap-4 mt-4 pt-4 border-t border-gray-100">
                     {service.logos.map((logo, idx) => (
-                      <img key={idx} src={logo.url} alt={logo.name} className="h-6 object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                      <img key={idx} src={logo.url} alt={logo.name} className="h-6 object-contain transition-all duration-300" />
                     ))}
                   </div>
                 )}
