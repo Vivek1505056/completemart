@@ -34,7 +34,7 @@ const featuredServices = [
     features: [
       'Passport photos (government approved)',
       'ID photos for licenses',
-      '10 minute photo service',
+      'Same-day service available',
       'Professional quality guaranteed'
     ],
     image: 'https://images.unsplash.com/photo-1639034741369-1e0c771adaeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXNzcG9ydCUyMHBob3RvJTIwcHJpbnRpbmclMjBzZXJ2aWNlfGVufDF8fHx8MTc3MTY0MTg1NXww&ixlib=rb-4.1.0&q=80&w=1080'
