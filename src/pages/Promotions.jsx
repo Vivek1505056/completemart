@@ -60,7 +60,7 @@ export default function Promotions() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Promotions & Savings</h1>
           <p className="text-xl md:text-2xl opacity-95 max-w-3xl leading-relaxed">
-            Save more on your favorite products and services with our exclusive weekly deals and monthly specials
+            Check out our weekly deals and monthly specials
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ export default function Promotions() {
           <div className="text-center mb-12 reveal">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">This Week's Featured Deals</h2>
             <p className="text-xl text-gray-600">
-              Don't miss out on these amazing savings at all Complete Mart locations
+              Available at all Complete Mart locations
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
@@ -141,8 +141,8 @@ export default function Promotions() {
             <Gift className="w-16 h-16 mx-auto mb-6" />
             <h2 className="text-4xl font-bold mb-6">Complete Mart Rewards</h2>
             <p className="text-xl mb-8 opacity-90">
-              Coming Soon! Join our loyalty program to earn points on every purchase and unlock exclusive
-              member-only deals. Sign up for our newsletter to be the first to know when we launch.
+              Coming Soon! Join our loyalty program to earn points on every purchase.
+              Sign up for our newsletter to stay updated.
             </p>
             <div className="max-w-md mx-auto">
               <form className="flex gap-3" onSubmit={(e) => { e.preventDefault(); setEmail(''); }}>

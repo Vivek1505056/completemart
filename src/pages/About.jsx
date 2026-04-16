@@ -5,17 +5,17 @@ const values = [
   {
     icon: Heart,
     title: 'Community First',
-    description: "We're committed to serving our local communities with care and dedication. Your neighborhood is our neighborhood."
+    description: "We care about the neighborhoods we serve and work to be a store you can count on."
   },
   {
     icon: Users,
     title: 'Customer Service',
-    description: 'Every customer is treated like family. Our team goes above and beyond to ensure you have a great experience.'
+    description: 'Friendly staff ready to help. We want every visit to be a good one.'
   },
   {
     icon: Award,
     title: 'Quality & Reliability',
-    description: 'We carefully select our products and services to meet the highest standards our customers deserve.'
+    description: 'Quality products and reliable services you can depend on.'
   },
   {
     icon: MapPin,
@@ -43,7 +43,7 @@ export default function About() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About Complete Mart</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed">
-            More than just a convenience store &ndash; we're your trusted community partner, serving the GTA since 2010
+            Your trusted community convenience store, proudly serving the Greater Toronto Area
           </p>
         </div>
       </section>
@@ -60,26 +60,16 @@ export default function About() {
               />
             </div>
             <div className="reveal-right">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Story</h2>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">Who We Are</h2>
               <div className="space-y-4 text-gray-700 text-lg">
                 <p>
-                  Complete Mart opened its first location in downtown Toronto in 2010 with a simple
-                  mission: to provide our community with quality products, essential services, and exceptional
-                  customer care.
+                  Complete Mart is a community-focused convenience store with three locations across the
+                  Greater Toronto Area. We carry everything from daily groceries to parcel shipping,
+                  photo services, and U-Haul rentals.
                 </p>
                 <p>
-                  What started as a single convenience store has grown into three thriving locations across the
-                  Greater Toronto Area. Our expansion has been driven by one thing &ndash; the trust and loyalty of
-                  customers like you.
-                </p>
-                <p>
-                  Today, we're proud to serve thousands of customers every week, offering everything from
-                  daily groceries to specialized services like parcel shipping, photo services, and U-Haul
-                  rentals.
-                </p>
-                <p>
-                  Every member of our team is committed to making your visit quick, easy, and pleasant.
-                  We're more than a store &ndash; we're your neighbors, and we're here to help.
+                  Our goal is simple: give our customers a quick, easy, and friendly shopping experience
+                  every time they walk through the door.
                 </p>
               </div>
             </div>
@@ -93,7 +83,7 @@ export default function About() {
           <div className="text-center mb-16 reveal">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Values</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Our values guide everything we do, from how we serve customers to how we support our communities
+              What matters to us
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
@@ -116,13 +106,7 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Committed to Our Community</h2>
             <p className="text-xl opacity-90 mb-8">
-              We believe in giving back to the communities that have supported us. Complete Mart is proud to
-              sponsor local sports teams, participate in community events, and support local charities
-              throughout the year.
-            </p>
-            <p className="text-lg opacity-90">
-              When you shop with us, you're supporting a locally-focused business that reinvests in the
-              neighborhoods we serve. Thank you for being part of our story.
+              When you shop with us, you're supporting a local business right in your neighborhood.
             </p>
           </div>
         </div>

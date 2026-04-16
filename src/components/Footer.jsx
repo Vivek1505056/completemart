@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="text-xl font-bold text-white">Complete Mart</div>
             </div>
             <p className="text-sm mb-4">
-              Your trusted community convenience store serving Toronto and surrounding areas since 2010.
+              Your community convenience store serving the Greater Toronto Area.
             </p>
           </div>
 

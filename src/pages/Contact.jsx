@@ -42,7 +42,7 @@ export default function Contact() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed">
-            Have a question or feedback? We'd love to hear from you &ndash; reach out and we'll respond within 24 hours
+            Have a question or feedback? Reach out and we'll get back to you
           </p>
         </div>
       </section>

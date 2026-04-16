@@ -8,11 +8,11 @@ const featuredServices = [
     title: 'Parcel Shipping Services',
     description: 'Send and receive packages with ease through our partnership with major carriers.',
     logos: [
-      { name: 'FedEx', url: 'https://logo.clearbit.com/fedex.com' },
-      { name: 'UPS', url: 'https://logo.clearbit.com/ups.com' },
-      { name: 'Purolator', url: 'https://logo.clearbit.com/purolator.com' },
-      { name: 'DHL', url: 'https://logo.clearbit.com/dhl.com' },
-      { name: 'Amazon', url: 'https://logo.clearbit.com/amazon.com' }
+      { name: 'FedEx', url: '/completemart/logos/fedex.svg' },
+      { name: 'UPS', url: '/completemart/logos/ups.svg' },
+      { name: 'Purolator', url: '/completemart/logos/purolator.svg' },
+      { name: 'DHL', url: '/completemart/logos/dhl.svg' },
+      { name: 'Amazon', url: '/completemart/logos/amazon.svg' }
     ],
     features: [
       'FedEx authorized shipping',
@@ -54,14 +54,14 @@ const featuredServices = [
 ];
 
 const additionalServices = [
-  { icon: Key, title: 'Key Cutting Services', description: 'Fast and accurate key duplication for house, car, office, and padlock keys while you wait.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
+  { icon: Key, title: 'Key Cutting Services', description: 'Fast and accurate key duplication for house, car, office, and padlock keys while you wait.', image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
   { icon: Ticket, title: 'OLG Lottery', description: 'Authorized retailer for Lotto Max, 6/49, Daily Grand, scratch tickets, and PROLINE sports betting.', image: 'https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
   { icon: Beer, title: 'Beer & Beverages', description: 'Wide selection of domestic, imported, and craft beers, wine, plus energy drinks and soft drinks always cold.', image: 'https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
   { icon: ShoppingCart, title: 'Grocery & Snacks', description: 'Dairy, bread, canned goods, snacks, and household essentials for everyday needs.', image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
   { icon: DollarSign, title: 'Money Transfer Services', description: 'Fast and secure international and domestic money transfers, bill payments, and money orders.', image: 'https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600', logos: [
-    { name: 'Western Union', url: 'https://logo.clearbit.com/westernunion.com' },
-    { name: 'MoneyGram', url: 'https://logo.clearbit.com/moneygram.com' },
-    { name: 'Ria', url: 'https://logo.clearbit.com/riamoneytransfer.com' }
+    { name: 'Western Union', url: '/completemart/logos/western-union.svg' },
+    { name: 'MoneyGram', url: '/completemart/logos/moneygram.svg' },
+    { name: 'Ria', url: '/completemart/logos/ria.svg' }
   ]},
   { icon: Banknote, title: 'ATM Services', description: 'ATM access for cash withdrawals and balance inquiries with major networks accepted.', image: 'https://images.unsplash.com/photo-1589758438368-0ad531db3366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' }
 ];
@@ -85,7 +85,7 @@ export default function Services() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed">
-            From parcel shipping to photo services, key cutting to U-Haul rentals &ndash; everything you need, all under one roof
+            From parcel shipping to photo services, key cutting to U-Haul rentals, all under one roof
           </p>
         </div>
       </section>
@@ -174,7 +174,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6 text-gray-900">Questions About Our Services?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Our friendly team is always happy to help. Visit any of our three locations or contact us directly.
+            Visit any of our three locations or contact us directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

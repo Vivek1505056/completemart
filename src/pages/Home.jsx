@@ -46,7 +46,7 @@ export default function Home() {
             Your Complete Convenience Store
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-xl text-gray-200">
-            Serving Toronto communities with quality products and reliable services since 2010
+            Quality products and reliable services at your neighborhood convenience store
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -70,9 +70,9 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 reveal">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Everything You Need, All in One Place</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">All Your Needs in One Place</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From daily essentials to specialized services, Complete Mart has you covered
+              Daily essentials and services, all under one roof
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
@@ -106,7 +106,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Locations</h2>
               <p className="text-xl text-gray-600 mb-8">
                 With 3 locations across the Greater Toronto Area, there's always a Complete Mart nearby.
-                Each store offers the same quality products and excellent service you can count on.
+                Visit any of our stores for the same products and services.
               </p>
               <div className="space-y-4 mb-8">
                 {locationsList.map((loc) => (
