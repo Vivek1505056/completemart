@@ -8,11 +8,11 @@ const featuredServices = [
     title: 'Parcel Shipping Services',
     description: 'Send and receive packages with ease through our partnership with major carriers.',
     logos: [
-      { name: 'FedEx', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/FedEx_Corporation_-_2016_Logo.svg/200px-FedEx_Corporation_-_2016_Logo.svg.png' },
-      { name: 'UPS', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/United_Parcel_Service_logo_2014.svg/200px-United_Parcel_Service_logo_2014.svg.png' },
-      { name: 'Purolator', url: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Purolator_Inc._logo.svg/200px-Purolator_Inc._logo.svg.png' },
-      { name: 'DHL', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/200px-DHL_Logo.svg.png' },
-      { name: 'Amazon', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png' }
+      { name: 'FedEx', url: 'https://logo.clearbit.com/fedex.com' },
+      { name: 'UPS', url: 'https://logo.clearbit.com/ups.com' },
+      { name: 'Purolator', url: 'https://logo.clearbit.com/purolator.com' },
+      { name: 'DHL', url: 'https://logo.clearbit.com/dhl.com' },
+      { name: 'Amazon', url: 'https://logo.clearbit.com/amazon.com' }
     ],
     features: [
       'FedEx authorized shipping',
@@ -59,9 +59,9 @@ const additionalServices = [
   { icon: Beer, title: 'Beer & Beverages', description: 'Wide selection of domestic, imported, and craft beers, wine, plus energy drinks and soft drinks always cold.', image: 'https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
   { icon: ShoppingCart, title: 'Grocery & Snacks', description: 'Dairy, bread, canned goods, snacks, and household essentials for everyday needs.', image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
   { icon: DollarSign, title: 'Money Transfer Services', description: 'Fast and secure international and domestic money transfers, bill payments, and money orders.', image: 'https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600', logos: [
-    { name: 'Western Union', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Western_Union_Logo_2019.svg/200px-Western_Union_Logo_2019.svg.png' },
-    { name: 'MoneyGram', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/MoneyGram_logo.svg/200px-MoneyGram_logo.svg.png' },
-    { name: 'Ria', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ria_Money_Transfer_logo.svg/200px-Ria_Money_Transfer_logo.svg.png' }
+    { name: 'Western Union', url: 'https://logo.clearbit.com/westernunion.com' },
+    { name: 'MoneyGram', url: 'https://logo.clearbit.com/moneygram.com' },
+    { name: 'Ria', url: 'https://logo.clearbit.com/riamoneytransfer.com' }
   ]},
   { icon: Banknote, title: 'ATM Services', description: 'ATM access for cash withdrawals and balance inquiries with major networks accepted.', image: 'https://images.unsplash.com/photo-1589758438368-0ad531db3366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' }
 ];
