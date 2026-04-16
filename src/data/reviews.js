@@ -1,17 +1,17 @@
 export const reviews = [
   {
-    name: 'Priya S.',
+    name: 'Jemar S.',
     rating: 5,
-    quote: 'Always clean, friendly, and stocked. Shipping parcels here has been super easy.'
+    quote: 'I had a fantastic experience. Chintan took the time in a crazy busy moment to find the right address to send my documents. He went above all expectations!'
   },
   {
-    name: 'Marco L.',
+    name: 'Joanne H.',
     rating: 5,
-    quote: 'Great staff and fast passport photo service. I was in and out in ten minutes.'
+    quote: 'Amazing shipping experience! They offer every postal service and a very fast, friendly experience with complementary prices.'
   },
   {
-    name: 'Alina R.',
-    rating: 4,
-    quote: 'My go-to local store for snacks and OLG. Weekly deals are actually worth checking.'
+    name: 'Shannon',
+    rating: 5,
+    quote: 'They offer basically most major courier services drop off and pick up, Amazon, UPS, DHL, FedEx. They also offer passport photo services. The best part is they take credit card payment, even for the lottery tickets.'
   }
 ];

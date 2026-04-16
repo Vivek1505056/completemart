@@ -14,9 +14,9 @@ const services = [
 ];
 
 const reviews = [
-  { name: 'Sarah M.', rating: 5, text: 'Great service and always friendly staff. My go-to store for everything!' },
-  { name: 'Michael R.', rating: 5, text: 'Super convenient location and they have everything I need. Love the shipping services.' },
-  { name: 'Jennifer L.', rating: 5, text: 'Been coming here for years. The team is wonderful and the store is always well-stocked.' }
+  { name: 'Jemar S.', rating: 5, text: 'I had a fantastic experience. Chintan took the time in a crazy busy moment to find the right address to send my documents. He went above all expectations! I highly recommend this place!' },
+  { name: 'Joanne H.', rating: 5, text: 'Amazing shipping experience! They offer every postal service and a very fast, friendly experience with complementary prices. It\'s located in a convenience store for all your shopping needs.' },
+  { name: 'Shannon', rating: 5, text: 'They offer basically most major courier services drop off and pick up, Amazon, UPS, DHL, FedEx. They also offer passport photo services. The best part is they take credit card payment, even for the lottery tickets.' }
 ];
 
 const locationsList = [
