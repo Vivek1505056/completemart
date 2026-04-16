@@ -30,7 +30,7 @@ const featuredServices = [
   {
     icon: Camera,
     title: 'Photo Services',
-    description: 'Professional photo printing and passport photo services for all your needs.',
+    description: 'Passport photos and ID photo services for all your needs.',
     features: [
       'Passport photos (government approved)',
       'ID photos for licenses',
@@ -85,7 +85,7 @@ export default function Services() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed">
-            From parcel shipping to photo printing, key cutting to U-Haul rentals &ndash; everything you need, all under one roof
+            From parcel shipping to photo services, key cutting to U-Haul rentals &ndash; everything you need, all under one roof
           </p>
         </div>
       </section>

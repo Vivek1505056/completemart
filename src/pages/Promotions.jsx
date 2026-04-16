@@ -18,7 +18,7 @@ const weeklyDeals = [
     image: 'https://images.unsplash.com/photo-1766040923580-16ad32fae8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWNrYWdlJTIwZGVsaXZlcnklMjBzaGlwcGluZyUyMGJveGVzfGVufDF8fHx8MTc3MTY0MDM2Mnww&ixlib=rb-4.1.0&q=80&w=1080'
   },
   {
-    title: 'Photo Printing',
+    title: 'Photo Services',
     discount: '50% Off',
     description: 'Passport photos and ID photos',
     validUntil: 'March 21, 2026',
@@ -36,7 +36,7 @@ const weeklyDeals = [
 const monthlySpecials = [
   { title: 'Key Cutting Special', description: 'Get 3 keys cut for the price of 2', icon: Tag },
   { title: 'Money Transfer Discount', description: 'Save $5 on international transfers over $200', icon: TrendingDown },
-  { title: 'Fresh Produce Friday', description: '15% off all fresh fruits and vegetables every Friday', icon: Gift }
+  { title: 'Snack Saturday', description: '15% off all snacks and chips every Saturday', icon: Gift }
 ];
 
 export default function Promotions() {

@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2 text-sm">
               <li>Parcel Shipping</li>
-              <li>Photo Printing</li>
+              <li>Photo Services</li>
               <li>Key Cutting</li>
               <li>U-Haul Rentals</li>
               <li>Money Transfer</li>

@@ -74,7 +74,7 @@ export default function About() {
                 </p>
                 <p>
                   Today, we're proud to serve thousands of customers every week, offering everything from
-                  daily groceries to specialized services like parcel shipping, photo printing, and U-Haul
+                  daily groceries to specialized services like parcel shipping, photo services, and U-Haul
                   rentals.
                 </p>
                 <p>

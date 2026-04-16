@@ -3,12 +3,12 @@ import { ArrowRight, Package, Camera, Key, Ticket, Beer, ShoppingCart, Truck, Do
 import { useScrollReveal, useScrollToTop } from '../hooks/useScrollReveal';
 
 const services = [
-  { icon: Package, name: 'Parcel Shipping', description: 'FedEx, UPS, Purolator & more' },
+  { icon: Package, name: 'Parcel Shipping', description: 'FedEx, UPS, DHL, Amazon Hub & more' },
   { icon: Camera, name: 'Photo Services', description: 'Printing & passport photos' },
   { icon: Key, name: 'Key Cutting', description: 'Fast & accurate service' },
   { icon: Ticket, name: 'OLG Lottery', description: 'Your lucky stop' },
-  { icon: Beer, name: 'Beer & Beverages', description: 'Cold drinks available' },
-  { icon: ShoppingCart, name: 'Grocery & Snacks', description: 'Fresh & convenient' },
+  { icon: Beer, name: 'Beer, Wine & Beverages', description: 'Cold drinks available' },
+  { icon: ShoppingCart, name: 'Grocery & Snacks', description: 'Daily essentials & snacks' },
   { icon: Truck, name: 'U-Haul Rentals', description: 'Moving made easy' },
   { icon: DollarSign, name: 'Money Transfer', description: 'Secure transactions' }
 ];
