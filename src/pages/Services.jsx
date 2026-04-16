@@ -54,16 +54,16 @@ const featuredServices = [
 ];
 
 const additionalServices = [
-  { icon: Key, title: 'Key Cutting Services', description: 'Fast and accurate key duplication for house, car, office, and padlock keys while you wait.' },
-  { icon: Ticket, title: 'OLG Lottery', description: 'Authorized retailer for Lotto Max, 6/49, Daily Grand, scratch tickets, and PROLINE sports betting.' },
-  { icon: Beer, title: 'Beer & Beverages', description: 'Wide selection of domestic, imported, and craft beers, wine, plus energy drinks and soft drinks always cold.' },
-  { icon: ShoppingCart, title: 'Grocery & Snacks', description: 'Dairy, bread, canned goods, snacks, and household essentials for everyday needs.' },
-  { icon: DollarSign, title: 'Money Transfer Services', description: 'Fast and secure international and domestic money transfers, bill payments, and money orders.', logos: [
+  { icon: Key, title: 'Key Cutting Services', description: 'Fast and accurate key duplication for house, car, office, and padlock keys while you wait.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
+  { icon: Ticket, title: 'OLG Lottery', description: 'Authorized retailer for Lotto Max, 6/49, Daily Grand, scratch tickets, and PROLINE sports betting.', image: 'https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
+  { icon: Beer, title: 'Beer & Beverages', description: 'Wide selection of domestic, imported, and craft beers, wine, plus energy drinks and soft drinks always cold.', image: 'https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
+  { icon: ShoppingCart, title: 'Grocery & Snacks', description: 'Dairy, bread, canned goods, snacks, and household essentials for everyday needs.', image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' },
+  { icon: DollarSign, title: 'Money Transfer Services', description: 'Fast and secure international and domestic money transfers, bill payments, and money orders.', image: 'https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600', logos: [
     { name: 'Western Union', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Western_Union_Logo_2019.svg/200px-Western_Union_Logo_2019.svg.png' },
     { name: 'MoneyGram', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/MoneyGram_logo.svg/200px-MoneyGram_logo.svg.png' },
     { name: 'Ria', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ria_Money_Transfer_logo.svg/200px-Ria_Money_Transfer_logo.svg.png' }
   ]},
-  { icon: Banknote, title: 'ATM Services', description: 'ATM access for cash withdrawals and balance inquiries with major networks accepted.' }
+  { icon: Banknote, title: 'ATM Services', description: 'ATM access for cash withdrawals and balance inquiries with major networks accepted.', image: 'https://images.unsplash.com/photo-1589758438368-0ad531db3366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600' }
 ];
 
 export default function Services() {
@@ -143,7 +143,13 @@ export default function Services() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
             {additionalServices.map((service, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div key={index} className="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                {service.image && (
+                  <div className="h-48 overflow-hidden">
+                    <img src={service.image} alt={service.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                  </div>
+                )}
+                <div className="p-8">
                 <div className="inline-flex items-center justify-center w-14 h-14 bg-red-50 rounded-xl mb-4">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
@@ -156,6 +162,7 @@ export default function Services() {
                     ))}
                   </div>
                 )}
+                </div>
               </div>
             ))}
           </div>
